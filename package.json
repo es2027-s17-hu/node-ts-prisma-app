@@ -3,18 +3,28 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "type": "module",
   "scripts": {
-    "start": "ts-node src/main.ts",
+    "start": "tsx src/main.ts",
     "start-build": "node dist/main.js",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma": "dotenv -e .env -- prisma",
+    "prisma-no-proxy": "prisma"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^25.3.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "dotenv-cli": "^11.0.0",
+    "prisma": "^7.5.0",
+    "tsx": "^4.21.0"
+  },
+  "dependencies": {
+    "@prisma/adapter-mariadb": "^7.5.0",
+    "@prisma/client": "^7.5.0",
+    "dotenv": "^17.3.1"
   }
 }

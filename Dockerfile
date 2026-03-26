@@ -9,6 +9,7 @@ RUN npm install
 
 COPY . .
 
+RUN npm run prisma-no-proxy generate
 RUN npm run build
 
 EXPOSE 80

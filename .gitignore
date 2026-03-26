@@ -17,3 +17,4 @@ Thumbs.db
 # downloaded files
 downloads/
 
+src/generated/prisma
