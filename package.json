@@ -9,8 +9,7 @@
     "start-build": "node dist/main.js",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prisma": "dotenv -e .env -- prisma",
-    "prisma-no-proxy": "prisma"
+    "prisma": "dotenv -e .env -- prisma"
   },
   "keywords": [],
   "author": "",
