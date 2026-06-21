@@ -2,12 +2,10 @@
   "name": "ts-app",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "src/main.js",
   "type": "module",
   "scripts": {
-    "start": "tsx src/main.ts",
-    "start-build": "node dist/main.js",
-    "build": "tsc",
+    "start": "node src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prisma": "dotenv -e .env -- prisma",
     "prisma-no-proxy": "prisma"
@@ -16,11 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^25.3.0",
-    "typescript": "^5.9.3",
     "dotenv-cli": "^11.0.0",
-    "prisma": "^7.5.0",
-    "tsx": "^4.21.0"
+    "prisma": "^7.5.0"
   },
   "dependencies": {
     "@prisma/adapter-mariadb": "^7.5.0",
